@@ -3,4 +3,5 @@
 ## Contributors:
 - **Garegin Mazmanyan**
 - **Chitrangada Juneja**
+- **Adan Baca**
 
