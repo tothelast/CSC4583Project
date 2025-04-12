@@ -6,3 +6,6 @@
 - **Adan Baca**
 - **Simi Saha**
 
+
+## Dataset used:
+- https://huggingface.co/datasets/orionweller/NevIR
