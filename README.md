@@ -9,3 +9,6 @@
 
 ## Dataset used:
 - https://huggingface.co/datasets/orionweller/NevIR
+
+## Paper to read:
+- https://arxiv.org/pdf/2305.07614
