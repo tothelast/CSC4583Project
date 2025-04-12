@@ -12,3 +12,6 @@
 
 ## Paper to read:
 - https://arxiv.org/pdf/2305.07614
+
+## Meeting Recordings:
+- Meeting 1: https://drive.google.com/file/d/1JrKrUQLvV0LlCn-yzw8llw6wqav_DI_e/view?usp=sharing
