@@ -1,4 +1,5 @@
 """
+@author: Garegin Mazmanyan
 Example script showing how to import and use the NevIR dataset in other files.
 """
 from data import load_nevir_dataset

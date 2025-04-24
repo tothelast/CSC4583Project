@@ -1,4 +1,5 @@
 """
+@author: Garegin Mazmanyan
 Random baseline model for NevIR.
 
 This model randomly ranks two documents, which should give 25% pairwise accuracy
