@@ -12,6 +12,8 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 
 from data.data import load_nevir_dataset
 from models import RandomModel
+from tf_idf_model import tfidfModel
+from negation_model import negationModel
 
 def calculate_pairwise_accuracy(model, dataset):
     """
@@ -48,11 +50,21 @@ def main():
 
     # Initialize the random model
     model = RandomModel()
+    tf_idf_model = tfidfModel([])
+    negation_model = negationModel()
 
     # Calculate pairwise accuracy
     accuracy = calculate_pairwise_accuracy(model, test_set)
+    
+    accuracy_tfidf = calculate_pairwise_accuracy(tf_idf_model, test_set)
+    
+    accuracy_negation = calculate_pairwise_accuracy(negation_model, test_set)
 
     print(f"Random model pairwise accuracy: {accuracy:.2f}")
+    
+    print(f"TF-IDF model pairwise accuracy: {accuracy_tfidf:.2f}")
+    
+    print(f"Negation model pairwise accuracy: {accuracy_negation:.2f}")
 
 if __name__ == "__main__":
     main()
