@@ -69,7 +69,7 @@ def main():
     print(f"MonoT5 model pairwise accuracy: {accuracy_monot5:.2f}")
 
     # Uncomment these lines to test other models
-    # tfidf_model = tfidfModel()
+    # tfidf_model = tfidfModel([])
     # accuracy_tfidf = calculate_pairwise_accuracy(tfidf_model, test_set)
     # print(f"TF-IDF model pairwise accuracy: {accuracy_tfidf:.2f}")
 
