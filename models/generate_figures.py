@@ -20,7 +20,7 @@ tfidf = tfidfModel([])
 negation = negationModel()
 monot5 = MonoT5Model(model_name="castorini/monot5-3b-msmarco-10k")
 
-accuracies = {"Random":0, "TF-IDF":0, "Negation Heuristic":0, "MonoT5":0}
+accuracies = {}  
 
 print("calculating acc for random")
 accuracies["Random"] = calculate_pairwise_accuracy(random, test_set)
@@ -37,7 +37,7 @@ cmap = plt.get_cmap('tab10')
 colors = cmap(np.arange(len(names)))
 
 plt.figure(figsize=(8,5))
-bars = plt.bar(names, scores, colors=colors)
+bars = plt.bar(names, scores, color=colors)
 plt.ylim(0,1)
 plt.ylabel("Pairwise Accuracy")
 plt.title("Model Pairwise Accuracy on NevIR Test Set")
@@ -46,6 +46,7 @@ plt.xticks(rotation=45, ha="right")
 for bar, score in zip(bars, scores):
     plt.text(bar.get_x() + bar.get_width()/2, score+0.02, f"{score:.2%}", ha="center", va="bottom")
 plt.tight_layout()
+plt.savefig('model_accuracy_comparison.png')
 plt.show()
 
 
