@@ -6,6 +6,7 @@
 -   **Chitrangada Juneja**
 -   **Adan Baca**
 -   **Simi Saha**
+-   **Aidan Linder**
 
 ## Dataset used:
 
